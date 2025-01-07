@@ -1,0 +1,196 @@
+.service-price-item__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 119px;
+  height: 32px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-weight: 500;
+  gap: 8px;
+  border-radius: 16px;
+}
+
+.service-price {
+  background-color: var(--color-light-grey);
+}
+
+// services and prices for table and desktop
+.service-price__container {
+  display: none;
+}
+// swiper services and prices //
+
+.service-price__title {
+  border-top: 2px solid var(--color-border-green);
+  padding: 16px;
+  font-size: 16px;
+  color: var(--color-grey);
+  background: linear-gradient(45deg, #f8f8f8 0%, #ffffff 98.61%);
+}
+
+.service-price__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 16px;
+  background-color: var(--color-white);
+  margin: 16px;
+  padding: 16px;
+  border-radius: 6px;
+
+  .service-price-item__title {
+    color: var(--color-grey);
+  }
+}
+
+.service-price-item__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 1366.78px) and (min-width: 551px) {
+  .service-price__title {
+    padding: 16px;
+    font-size: 16px;
+    color: var(--color-grey);
+    background: linear-gradient(45deg, #f8f8f8 0%, #ffffff 98.61%);
+  }
+
+  .service-price__container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 24px 0px 24px;
+    background-color: var(--color-white);
+
+    .service-price__top {
+      display: flex;
+      flex-direction: row;
+      background-color: var(--color-light-grey);
+      padding-left: 16px;
+      padding-bottom: 16px;
+
+      span {
+        flex: 1 1 auto;
+        text-align: left;
+        font-size: 14px;
+        color: var(--color-grey);
+      }
+
+      span:first-child {
+        flex: 1.9;
+      }
+
+      span:last-child {
+        flex: 2;
+      }
+    }
+    .service-price__item:nth-child(2) {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    .service-price__item:last-child {
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom: 0px solid;
+    }
+
+    .service-price__item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0px 16px 0px 16px;
+      padding: 24px 0px 24px 0px;
+      border-radius: 0;
+      border-bottom: 2px solid var(--color-light-grey);
+
+      span {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        justify-content: flex-start;
+        font-size: 14px;
+      }
+
+      span:first-child {
+        flex: 3;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .service-price__title {
+    padding: 32px;
+    font-size: 16px;
+    color: var(--color-grey);
+  }
+
+  .service-price__container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 32px 0px 32px;
+    background-color: var(--color-white);
+
+    .service-price__top {
+      display: flex;
+      flex-direction: row;
+      background-color: var(--color-light-grey);
+      padding-left: 24px;
+      padding-bottom: 16px;
+
+      span {
+        flex: 1 1 auto;
+        text-align: left;
+        font-size: 14px;
+        color: var(--color-grey);
+      }
+
+      span:first-child {
+        flex: 1.8;
+      }
+
+      span:last-child {
+        flex: 2;
+      }
+    }
+    .service-price__item:nth-child(2) {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    .service-price__item:last-child {
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom: 0px solid;
+    }
+
+    .service-price__item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0px 24px 0px 24px;
+      padding: 24px 0px 24px 0px;
+      border-radius: 0;
+      border-bottom: 2px solid var(--color-border-grey);
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        flex: 1 1 auto;
+        text-align: left;
+      }
+
+      span:first-child {
+        flex: 2;
+      }
+    }
+  }
+}

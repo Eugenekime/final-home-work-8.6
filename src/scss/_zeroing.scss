@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: TT Lakes, serif;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(126, 126, 130, 1);
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  max-height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(27, 28, 33, 1);
+  font-weight: 400;
+}
+
+button {
+  background-color: var(--color-white);
+}

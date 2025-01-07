@@ -1,0 +1,115 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 54px 16px 20px 16px;
+  gap: 16px;
+  background-color: var(--color-light-grey);
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    color: var(--color-grey);
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1366.78px) and (min-width: 551px) {
+  .footer {
+    flex-direction: row;
+    padding: 50px 24px 40px 24px;
+    justify-content: space-between;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      height: 60px;
+    }
+
+    &__item:nth-child(1) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex: 1;
+
+      .footer__text {
+        text-align: left;
+      }
+    }
+
+    &__item:nth-child(2) {
+      justify-content: center;
+      align-items: flex-start;
+      min-width: 200px;
+      flex: 1.7;
+
+      .footer__text {
+        vertical-align: text-top;
+      }
+    }
+
+    &__item:last-child {
+      flex-direction: row;
+      justify-content: right;
+      align-items: flex-start;
+      flex: 1;
+
+      .footer__text {
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 32px 20px 32px;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      height: 60px;
+    }
+
+    &__item:nth-child(1) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex: 1;
+
+      .footer__text {
+        text-align: left;
+      }
+    }
+
+    &__item:nth-child(2) {
+      justify-content: center;
+      align-items: flex-start;
+      flex: 1.7;
+
+      .footer__text {
+        vertical-align: text-top;
+      }
+    }
+
+    &__item:last-child {
+      flex-direction: row;
+      justify-content: right;
+      align-items: flex-start;
+      flex: 1;
+
+      .footer__text {
+        text-align: right;
+      }
+    }
+  }
+}

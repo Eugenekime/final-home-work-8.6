@@ -1,0 +1,331 @@
+// block title
+.site-main {
+  flex: 1 1 auto;
+
+  &__section-info {
+    padding: 0 0;
+    background-color: var(--color-light-grey);
+    .block-title {
+      display: flex;
+      flex-direction: column;
+      padding-top: 24px;
+
+      .block-title__container {
+        display: flex;
+        flex-direction: row;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 40px;
+        letter-spacing: -0.6000000238418579px;
+        text-align: left;
+
+        .block-title__container--visible-on-1120 {
+          display: none;
+        }
+      }
+
+      &--aqua-stick {
+        width: 4px;
+        height: 40px;
+        background-color: var(--color-light-green);
+        border-radius: 3px;
+        margin-right: 12px;
+      }
+
+      .block-title__services-list {
+        margin-top: 24px;
+        margin-right: 18px;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        overflow-y: hidden;
+
+        li:first-child {
+          background-color: var(--color-white);
+          border-radius: 2px;
+          border: 2px solid var(--color-border-green);
+          color: var(--color-grey);
+        }
+
+        .services-list__options {
+          min-height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 16px;
+          white-space: nowrap;
+          font-weight: 500;
+          color: var(--color-grey);
+        }
+
+        .services-list__options:hover {
+          background-color: var(--color-white);
+          border-radius: 2px;
+          border: 2px solid var(--color-border-green);
+          cursor: pointer;
+          color: var(--color-grey);
+        }
+      }
+    }
+
+    // block about company
+
+    .block-about-company {
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+
+      &__text {
+        padding: 0 16px 0 16px;
+        font-weight: 400;
+        color: var(--color-black);
+      }
+
+      &__readmore {
+        background-color: var(--color-light-grey);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 16px 0 16px 10px;
+        gap: 6px;
+      }
+
+      &__readmore-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        text-align: left;
+      }
+
+      .block-about-company__text--text-for-768 {
+        display: none;
+      }
+
+      .block-about-company__text--text-for-1120 {
+        display: none;
+      }
+    }
+  }
+}
+
+// swiper
+
+.swiper-wrapper {
+  background-color: var(--color-light-grey);
+}
+
+.swiper-slide {
+  background-color: var(--color-light-grey);
+}
+
+.swiper-pagination {
+  bottom: -5px !important;
+}
+
+// bottom text
+
+.bottom-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--color-light-grey);
+  padding: 16px;
+  gap: 20px;
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    color: var(--color-black);
+  }
+}
+
+@media (max-width: 1366.78px) and (min-width: 551px) {
+  .site-main {
+    &__section-info {
+      // block title
+      .block-title {
+        padding-top: 32px;
+
+        &--aqua-stick {
+          margin-right: 24px;
+        }
+
+        &__services-list {
+          margin-top: 32px;
+          margin-left: 16px;
+        }
+      }
+      // block about company
+      .block-about-company {
+        margin-top: 32px;
+        flex-direction: row;
+
+        &__text {
+          padding-left: 24px;
+        }
+
+        &__text--text-for-768 {
+          display: block;
+          margin-top: 20px;
+          text-align: left;
+          transition: 0.7;
+        }
+
+        &__readmore {
+          margin: 24px 0 24px 10px;
+        }
+
+        &__container-logo {
+          display: block;
+        }
+
+        &__logo {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  // bottom text
+
+  .bottom-text {
+    padding: 32px;
+
+    p {
+      text-align: left;
+      width: 500px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .site-main {
+    .site-main__section-info {
+      .block-about-company {
+        &__logo {
+          min-width: 431px;
+          border-radius: 10px;
+          margin-right: 18px;
+        }
+        &__text--text-for-1120 {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  // block title
+
+  .site-main {
+    background-color: var(--color-light-grey);
+    .block-title {
+      margin-top: 42px;
+      padding-top: 0px;
+      overflow-x: auto;
+      max-width: 1120px;
+
+      &__container--visible-on-1120 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 32px;
+        flex: 1 1 auto;
+        margin-right: 18px;
+      }
+
+      &--button-for-1120 {
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        text-align: right;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+
+      &--aqua-stick {
+        margin-right: 32px;
+      }
+
+      &__services-list {
+        margin-top: 10px;
+        margin-left: 32px;
+        margin-right: 18px;
+      }
+    }
+
+    .setting-and-search-1120 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--color-light-grey);
+    }
+
+    // block about company
+    .site-main__section-info {
+      .block-about-company {
+        margin-top: 32px;
+        flex-direction: row;
+        max-width: 1366px;
+
+        &__text {
+          padding-left: 32px;
+        }
+
+        &__readmore {
+          margin: 24px 0 24px 24px;
+        }
+
+        &__container-logo {
+          display: block;
+        }
+
+        &__logo {
+          min-width: 531px;
+          border-radius: 10px;
+          margin-right: 18px;
+        }
+
+        &__text--text-for-768 {
+          display: block;
+          margin-top: 30px;
+          text-align: left;
+        }
+
+        &__text--text-for-1120 {
+          display: block;
+        }
+      }
+    }
+
+    // bottom text
+    .bottom-text {
+      padding: 32px;
+
+      p {
+        text-align: left;
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) and (max-width: 550.89px) {
+  .block-about-company__container-logo {
+    display: flex;
+    justify-content: center;
+  }
+}
