@@ -1,10 +1,13 @@
-@use './globals';
-@use './variables';
-@use './zeroing';
-@use './block/main';
-@use './block/header';
-@use './block/footer';
-@use './block/asides-panel';
-@use './block/mobile-menu';
-@use './block/service-price';
-@use './block/main-blocks';
+@use './base/global';
+@use './base/roots';
+@use './base/zeroing';
+
+@use './blocks/brands-devices';
+@use './blocks/service-price';
+
+@use './layouts/header';
+@use './layouts/main';
+@use './layouts/footer';
+
+@use './layouts/asides-panel';
+@use './layouts/mobile-menu';

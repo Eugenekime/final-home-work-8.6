@@ -8,7 +8,6 @@
   max-width: 1440px;
   min-height: 56px;
   background: linear-gradient(45deg, #f8f8f8 0%, #ffffff 98.61%);
-  border-top: 2px solid var(--color-light-green);
 }
 
 .blocks-lists-containers {
@@ -115,7 +114,7 @@
   border: 1px solid var(--color-border-grey);
   border-radius: 6px;
 
-  .devices-item__next {
+  .block-button__circle-red {
     display: flex;
     flex-direction: row;
     justify-content: center;

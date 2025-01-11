@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./scss/_fonts.css">
+
     <title>home-work 8.6</title>
   <script defer="defer" src="./js/bundle.js"></script><link href="style.css" rel="stylesheet"></head>
   <body>
@@ -140,23 +140,19 @@
 
           <form id="form-feedback-for-button" class="form-feedback">
             <div class="form-feedback__group">
-              <input class="form-feedback__input form__input" type="text" name="name" id="form-feedback__name" required>
-              <label class="form-feedback__label form__label" for="form-feedback__name">Имя</label>
+              <input class="form-feedback__input form__input" type="text" name="name" id="form-feedback__name" placeholder="Имя" required>
             </div>
 
             <div class="form-feedback__group">
-              <input class="form-feedback__input form__input" type="tel" name="phone-number" id="form-feedback__phone-number" required>
-              <label class="form-feedback__label form__label" for="form-feedback__phone-number">Телефон</label>
+              <input class="form-feedback__input form__input" type="tel" name="phone-number" id="form-feedback__phone-number" placeholder="Телефон" required>
             </div>
 
             <div class="form-feedback__group">
-              <input class="form-feedback__input form__input" type="email" name="email" id="form-feedback__email" required>
-              <label class="form-feedback__label form__label" for="form-feedback__email">Электронная почта</label>
+              <input class="form-feedback__input form__input" type="email" name="email" id="form-feedback__email" placeholder="Электронная почта" required>
             </div>
 
             <div class="form-feedback__group">
-              <textarea class="form-feedback__textarea form__input" id="form-feedback__message" name="message" rows="7" cols="44.5"></textarea>
-              <label class="form-feedback__label form__label" for="form-feedback__message">Сообщение</label>
+              <textarea class="form-feedback__textarea" id="form-feedback__message" name="message" rows="7" cols="44.5" placeholder="Сообщение"></textarea>
             </div>
           </form>
 
@@ -193,10 +189,7 @@
 
           <form id="form-call-for-button" class="form-call">
             <div class="form-call__group">
-              <input class="form-call__input form__input" type="tel" name="phone-number" id="form-call__phone-number" required>
-              <label for="form-call__phone-number" class="form-call__label form__label">
-                Телефон
-              </label>
+              <input class="form-call__input form__input" type="tel" name="phone-number" id="form-call__phone-number" placeholder="Телефон" required>
             </div>
             <div class="form-feedback__container-text form__container-text">
               <span class="form-feedback__text form__text">Нажимая “отправить”, вы даете согласие на
@@ -261,11 +254,19 @@
                     гордимся тем, что к нам обращаются по рекомендациям и, в
                     свою очередь, советуют нас родным и близким.
                   </span>
+                  <span class="block-about-company__text--text-for-1120-and-more">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Reiciendis eum illum sapiente laborum. Assumenda voluptas
+                    alias adipisci fugit architecto hic, autem ipsum cumque eos,
+                    ut unde esse delectus ex. Pariatur!
+                  </span>
                 </p>
 
                 <button class="block-about-company__readmore">
                   <img class="block-about-company__readmore-icon" src="./img/arrow-read-more.svg" alt="icon arrow read more ">
-                  <span class="block-about-company__readmore-text">Читать далее</span>
+                  <span class="block-about-company__readmore-text">
+                    Читать далее
+                  </span>
                 </button>
               </div>
 
@@ -907,6 +908,6 @@
         }
       }
     </script>
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

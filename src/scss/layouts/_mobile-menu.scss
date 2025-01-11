@@ -181,8 +181,10 @@
           display: none;
         }
       }
-      .footer-mobile-menu__container {
-        margin-top: 241px;
+      .footer-mobile-menu {
+        .footer-mobile-menu__container {
+          margin-top: 241px;
+        }
       }
     }
   }

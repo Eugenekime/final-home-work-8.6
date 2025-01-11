@@ -91,6 +91,10 @@
         gap: 6px;
       }
 
+      &__readmore-icon {
+        transition: transform 0.6s ease;
+      }
+
       &__readmore-text {
         font-size: 16px;
         font-weight: 500;
@@ -104,6 +108,10 @@
       }
 
       .block-about-company__text--text-for-1120 {
+        display: none;
+      }
+
+      .block-about-company__text--text-for-1120-and-more {
         display: none;
       }
     }
@@ -214,8 +222,12 @@
           border-radius: 10px;
           margin-right: 18px;
         }
-        &__text--text-for-1120 {
+
+        &__text--text-for-768 {
           display: block;
+          margin-top: 20px;
+          text-align: left;
+          transition: 0.7;
         }
       }
     }
